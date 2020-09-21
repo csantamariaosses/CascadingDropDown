@@ -16,9 +16,7 @@ public class CityService {
 	private CityDao cityDao;
 	
 	public List<City> findByState( int id ) {
-		System.out.println("FindByState:"+ id);
 		List<City> cities = cityDao.findByState(id);
-//		System.out.println("cyties:" + cities);
 		return cities;
 	}
 	
